@@ -1,0 +1,10 @@
+<sly data-sly-use.model="com.regnant.sample2.models.NavigationAPI"/>
+<div>
+<a href="index.html" class="logo"></a>
+	<ul id="navigation">
+		<sly data-sly-list="${model.navitems}">
+		<li class="selected">${item.gettitle}</a>
+		</li>
+		</sly>
+	</ul>
+</div>

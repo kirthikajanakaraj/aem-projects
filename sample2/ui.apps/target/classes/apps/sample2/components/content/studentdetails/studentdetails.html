@@ -1,0 +1,12 @@
+<sly data-sly-use.student="com.regnant.sample2.models.Studentdetails"/>
+<table>
+<tr>
+<th>Name</th>
+<th>Branch</th>
+<th>Date</th>
+</tr>
+<sly data-sly-list=
+"${student.name}"/>
+<p>"${student.branch}"</p>
+
+</table>

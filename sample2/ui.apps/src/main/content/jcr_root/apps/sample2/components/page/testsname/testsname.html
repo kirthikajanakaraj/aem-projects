@@ -1,0 +1,62 @@
+<!--/*query1
+
+<div data-sly-use.comp1="com.regnant.services.Mycomponentpojo">
+    <h1>${comp1.myTitle}</h1>
+</div>
+
+
+
+query2
+Accessing a value 
+${properties['jcr:title']}.
+
+
+query3
+ Printing an array 
+${testsname.names}
+
+
+
+ Printing the array, separating items by ; 
+${testsname.names @ join=';'}
+
+
+
+ImplUSE
+<div data-sly-use.myComponent="${'com.regnant.task.ImplUSE' @ param1='one', param2='two'}">
+    ${myComponent.Calculatedvalue}
+</div>
+WCMUSEPOJO
+<div data-sly-use.myComponent="${'com.regnant.task.ImplWcmPojo' @ param1='one', param2='two'}">
+    ${myComponent.getcalculatedValue}
+</div>
+Resouce
+<div data-sly-use.myComponent="${'com.regnant.task.ImplResource'}">
+    ${myComponent.Modifiedtext}
+   
+    */-->
+    
+    
+<!-- /*RetriveContentfromJCR*/ -->
+<%@include file="/libs/foundation/global.jsp"%>
+<%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %>
+<h1>TemplateSling Page</h1>
+<%
+//create a custom.sling.Query instance
+custom.sling.Query wfService = sling.getService(com.regnant.task.RetriveContentfromJCR);
+ 
+%>
+<h2>Use the Sling API to get title of the resource at /content/testing/jcr:content</h2>
+  
+<h3>The title of the page is: <%=  wfService.getJCRData("/content/testing/jcr:content")%></h3>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

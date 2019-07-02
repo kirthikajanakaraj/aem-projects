@@ -1,0 +1,55 @@
+<h1>Register</h1>
+
+<form action="/bin/checkbox" method="GET">
+	<label for="First Name">First Name:</label> <input name="First Name"
+		type="text" placeholder="First name" required=""> <label
+		for="Last Name">Last Name:</label> <input name="Last Name" type="text"
+		placeholder="Last name" required="">
+
+
+	<p>
+		<label for="Male">Male: </label> <input name="genderChoice" id="Male"
+			type="radio" value="Male"> <label for="Female">Female:
+		</label> <input name="genderChoice" id="Female" type="radio" value="Female">
+
+		<label for="Other">Other: </label> <input name="genderChoice"
+			id="Other" type="radio" value="Other">
+	</p>
+
+	<p>
+		<label for="Email">Email:</label> <input name="Email" type="email"
+			placeholder="your email" required=""> <label for="Password">Password:</label>
+		<input name="Password" type="password" placeholder="your password"
+			required="" minlength="5" maxlength="10"
+			title="It has to be between 5 - 10 characters">
+	</p>
+
+	<label for="birthday">Birthday:</label> <select name="month">
+		<option value="month" selected disabled>month</option>
+		<option value="January">January</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+	</select> <select name="day">
+		<option value="day" selected disabled>day</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select> <select name="year">
+		<option value="year" selected disabled>year</option>
+		<option value="1980">1980</option>
+		<option value="1979">1979</option>
+		<option value="1978">1978</option>
+	</select>
+
+	<p>
+		<label>I agree to the terms and conditions <input
+			type="checkbox" name="checkbox"></label>
+	</p>
+	<p>
+		<button class="btn btn-lg btn-primary btn-block text-uppercase"
+			type="submit" value="submit">submit in</button>
+	</p>
+</form>
+
+</body>
+</html>

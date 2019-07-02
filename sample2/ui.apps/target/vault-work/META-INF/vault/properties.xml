@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>sample2 Content Package</comment>
+<entry key="createdBy">Veerendra</entry>
+<entry key="name">example-project.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2019-07-02T16:03:32.596+0530</entry>
+<entry key="groupId">com.myco</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">mypackeage</entry>
+<entry key="description">Maven Multimodule project for sample2.</entry>
+<entry key="artifactId">example-project.ui.apps</entry>
+<entry key="path">/etc/packages/mypackeage/example-project.ui.apps.zip</entry>
+</properties>

@@ -1,0 +1,7 @@
+<sly data-sly-use.model123="com.regnant.sample2.models.ImagewithLink" />
+<div class="header">
+<img src="${model123.fileReference}">
+<div>
+<a href="${model123.linkURL @ extension='html'}">${model123.linktitle}</a>
+</div>
+</div>
